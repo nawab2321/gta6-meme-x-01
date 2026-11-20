@@ -39,13 +39,13 @@ MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 cmp POST.json out/POST.json
 ```
 
-The committed value of `url` is currently `null`, pending publication. The copy command also works with this pending value. The site requires the real public X status URL.
+The root `POST.json` records the public [Client Call post on X](https://x.com/web3_guys/status/2123752507260522827).
 
 ## Publish on X
 
 1. Use a public account and publish before **November 23, 2026 at 14:00 UTC**. Paste the [prepared post](docs/x-post.txt), including the bounty URL and the play code.
 2. Attach [gta6-meme-final.png](output/gta6-meme-final.png) as the first image. Use a standalone post so the caption and image are in the same post.
-3. Open the post signed out, then use **Share → Copy link**. Keep the post and account public until results are out. Return the status URL so the agent can update `POST.json` and finish validation. The root file will contain a single `url` field with the public status URL and numeric ID.
+3. Open the post signed out, then use **Share → Copy link**. Keep the post and account public until results are out. Save the URL with the numeric post ID in the single `url` field of `POST.json`.
 
 ## Validate the entry
 
